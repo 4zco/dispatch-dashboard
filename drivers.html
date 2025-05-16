@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drivers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <h1>Dispatch Dashboard</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">All Orders</a></li>
+        <li><a href="drivers.html" class="active">Drivers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="drivers-section">
+      <h2>Drivers</h2>
+      <!-- Drivers list table -->
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Number</th>
+            <th scope="col">Cell</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>D1</td>
+            <td>123-456-7890</td>
+            <!-- Link to example driver details page (would include driver ID in a real app) -->
+            <td><a href="driver-details.html">View Details</a></td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>D2</td>
+            <td>987-654-3210</td>
+            <td><a href="driver-details.html">View Details</a></td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>D3</td>
+            <td>555-123-4567</td>
+            <td><a href="driver-details.html">View Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!-- No script needed on this static page -->
+</body>
+</html>
+

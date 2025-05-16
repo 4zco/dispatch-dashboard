@@ -1,0 +1,127 @@
+/* styles.css */
+/* Base styles and layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* No default margin – full-width header */
+  background-color: #fdfdfd;
+}
+
+/* Container for centered content on desktop */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header (site title and navigation bar) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-list li {
+  margin-right: 20px;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+.nav-list a:hover {
+  text-decoration: underline;
+}
+.nav-list a.active {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Main content links (e.g., "View Details") */
+main a {
+  color: #0066cc;
+  text-decoration: none;
+}
+main a:hover {
+  text-decoration: underline;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+/* Row hover highlight for non-urgent rows */
+tbody tr:hover:not(.urgent-row) {
+  background-color: #f5f5f5;
+}
+
+/* Urgent order highlighting */
+.urgent-label {
+  color: #fff;
+  background-color: #d40000;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.normal-label {
+  color: #777;
+  font-size: 0.9em;
+}
+.urgent-row {
+  background-color: #ffecec;
+}
+.urgent-row:hover {
+  background-color: #ffdddd;
+}
+
+/* Buttons */
+button {
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
+}
+.assign-button {
+  /* Align with select by removing top margin, add left gap */
+  margin: 0 0 0 5px;
+}
+.deliver-button {
+  margin: 0;
+}
+#fetch-button {
+  margin-bottom: 15px;
+}
+
+/* Notification message banner */
+.notification {
+  background-color: #4caf50; /* green success */
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+

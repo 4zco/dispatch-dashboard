@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation (Drivers remains active) -->
+  <header>
+    <h1>Dispatch Dashboard</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">All Orders</a></li>
+        <li><a href="drivers.html" class="active">Drivers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Example Driver Details Section (for driver Alice) -->
+    <section id="driver-details-section">
+      <h2>Driver: Alice</h2>
+      <p>Number: D1</p>
+      <p>Cell: 123-456-7890</p>
+
+      <h3>Assigned Orders</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Priority</th>
+            <th scope="col">Invoice</th>
+            <th scope="col">Garage</th>
+            <th scope="col">Area</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Items</th>
+            <th scope="col">Warehouses</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- Urgent assignment highlighted -->
+            <td><span class="urgent-label">Urgent</span></td>
+            <td>INV001</td>
+            <td>Shop A</td>
+            <td>North</td>
+            <td>$150.00</td>
+            <td>4</td>
+            <td>WH1</td>
+            <td>Assigned</td>
+          </tr>
+          <tr>
+            <!-- Normal priority order (delivered) -->
+            <td><span class="normal-label">Normal</span></td>
+            <td>INV004</td>
+            <td>Shop D</td>
+            <td>West</td>
+            <td>$300.00</td>
+            <td>1</td>
+            <td>WH4</td>
+            <td>Delivered</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Summaries</h3>
+      <p>Unique Garages: 2</p>
+      <p>Unique Warehouses: 2</p>
+    </section>
+  </main>
+</body>
+</html>
+

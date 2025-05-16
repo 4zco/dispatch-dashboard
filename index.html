@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dispatch Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <h1>Dispatch Dashboard</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">All Orders</a></li>
+        <li><a href="drivers.html">Drivers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main content area -->
+  <main class="container">
+    <!-- Notification message area (for status updates) -->
+    <div id="notification" class="notification" style="display:none;"></div>
+    <!-- Fetch new orders button -->
+    <button id="fetch-button">Fetch New Orders</button>
+
+    <!-- Unassigned Orders Section -->
+    <section id="unassigned-section">
+      <h2>Unassigned Orders (<span id="unassigned-count">0</span>)</h2>
+      <table id="unassigned-table">
+        <thead>
+          <tr>
+            <th scope="col">Priority</th>
+            <th scope="col">Invoice</th>
+            <th scope="col">Garage</th>
+            <th scope="col">Area</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Items</th>
+            <th scope="col">Warehouses</th>
+            <th scope="col">Assign to Driver</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be populated by script.js -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Assigned Orders Section -->
+    <section id="assigned-section">
+      <h2>Assigned Orders (<span id="assigned-count">0</span>)</h2>
+      <table id="assigned-table">
+        <thead>
+          <tr>
+            <th scope="col">Priority</th>
+            <th scope="col">Invoice</th>
+            <th scope="col">Garage</th>
+            <th scope="col">Area</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Items</th>
+            <th scope="col">Warehouses</th>
+            <th scope="col">Driver</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be populated by script.js -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Delivered Orders Section -->
+    <section id="delivered-section">
+      <h2>Delivered Orders (<span id="delivered-count">0</span>)</h2>
+      <table id="delivered-table">
+        <thead>
+          <tr>
+            <th scope="col">Priority</th>
+            <th scope="col">Invoice</th>
+            <th scope="col">Garage</th>
+            <th scope="col">Area</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Items</th>
+            <th scope="col">Warehouses</th>
+            <th scope="col">Driver</th>
+            <th scope="col">Delivered Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be populated by script.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
